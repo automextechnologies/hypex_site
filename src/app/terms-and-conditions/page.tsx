@@ -170,6 +170,15 @@ export default function TermsAndConditions() {
             <div className="bg-dark rounded-xl p-5 border border-white/10 text-sm">
               <p className="text-white font-semibold">Hypex Legal Counsel</p>
               <p className="text-gray mt-1">Email: legal@hypex.agency</p>
+              <p className="text-gray mt-1">
+                Phone:{" "}
+                <a
+                  href="tel:+919746717794"
+                  className="text-white hover:underline transition-colors"
+                >
+                  +91 9746717794
+                </a>
+              </p>
               <p className="text-gray">Website: https://hypex.agency</p>
             </div>
           </section>

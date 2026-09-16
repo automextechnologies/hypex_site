@@ -66,6 +66,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 space-y-2 text-light">
               <li>
                 <strong className="text-white">Contact Data:</strong> Full name, telephone number, email address, and company name.
+                <strong className="text-white">Contact Data:</strong> Full name, telephone number, and company name.
               </li>
               <li>
                 <strong className="text-white">Consent Records:</strong> Explicit records of consent regarding SMS messaging, WhatsApp messaging, and acceptance of our Terms &amp; Conditions, including timestamp and source URL.
@@ -179,6 +180,15 @@ export default function PrivacyPolicy() {
             <div className="bg-dark rounded-xl p-5 border border-white/10 text-sm">
               <p className="text-white font-semibold">Hypex Privacy Team</p>
               <p className="text-gray mt-1">Email: legal@hypex.agency</p>
+              <p className="text-gray mt-1">
+                Phone:{" "}
+                <a
+                  href="tel:+919746717794"
+                  className="text-white hover:underline transition-colors"
+                >
+                  +91 9746717794
+                </a>
+              </p>
               <p className="text-gray">Website: https://hypex.agency</p>
             </div>
           </section>
