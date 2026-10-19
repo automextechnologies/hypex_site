@@ -52,6 +52,9 @@ export default function PrivacyPolicy() {
             <p>
               Hypex (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you visit our website, interact with our marketing platforms, or utilize our creative, performance marketing, and business automation services.
             </p>
+            <p className="text-light">
+              Automex is a brand owned and operated by Hypex. This Privacy Policy governs all data collection, processing, and privacy protections across both Hypex and Automex platforms and services.
+            </p>
             <p>
               By accessing our website or submitting your contact information, you consent to the data practices described in this policy.
             </p>
@@ -66,7 +69,6 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 space-y-2 text-light">
               <li>
                 <strong className="text-white">Contact Data:</strong> Full name, telephone number, email address, and company name.
-                <strong className="text-white">Contact Data:</strong> Full name, telephone number, and company name.
               </li>
               <li>
                 <strong className="text-white">Consent Records:</strong> Explicit records of consent regarding SMS messaging, WhatsApp messaging, and acceptance of our Terms &amp; Conditions, including timestamp and source URL.
@@ -189,23 +191,53 @@ export default function PrivacyPolicy() {
                   +91 9746717794
                 </a>
               </p>
-              <p className="text-gray">Website: https://hypex.agency</p>
+              <p className="text-gray">
+                Website: https://hypex.agency • https://automextechnologies.com
+              </p>
+              <p className="text-gray mt-1 text-xs">
+                Automex is a brand owned and operated by Hypex.
+              </p>
             </div>
           </section>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-white/10 py-8">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray">
-          <p>© {new Date().getFullYear()} Hypex. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">
-              Terms &amp; Conditions
-            </Link>
-            <Link href="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
+      <footer className="bg-black border-t border-white/10 py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Our Brands */}
+          <div className="flex flex-col items-center justify-center text-center gap-3 pb-8 mb-8 border-b border-white/10">
+            <p className="text-xs uppercase tracking-widest text-gray font-semibold">
+              Our Brands
+            </p>
+            <a
+              href="https://automextechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/10 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300"
+              title="Automex Technologies"
+            >
+              <img
+                src="/images/automexlogosmall.png"
+                alt="Automex"
+                className="h-6 md:h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </a>
+            <p className="text-xs text-gray">
+              Automex is a brand owned and operated by Hypex.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray">
+            <p>© {new Date().getFullYear()} Hypex. All rights reserved.</p>
+            <div className="flex gap-6">
+              <Link href="/terms-and-conditions" className="hover:text-white transition-colors">
+                Terms &amp; Conditions
+              </Link>
+              <Link href="/" className="hover:text-white transition-colors">
+                Home
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

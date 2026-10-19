@@ -50,7 +50,7 @@ export default function TermsAndConditions() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing our website, submitting an inquiry form, or engaging Hypex (&quot;Hypex,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) for marketing, creative, advertising, or automation services, you (&quot;Client,&quot; &quot;User,&quot; or &quot;you&quot;) agree to be legally bound by these Terms and Conditions (&quot;Terms&quot;). If you disagree with any portion of these Terms, you must discontinue use of our site and services immediately.
+              By accessing our website, submitting an inquiry form, or engaging Hypex (&quot;Hypex,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) for marketing, creative, advertising, or automation services, you (&quot;Client,&quot; &quot;User,&quot; or &quot;you&quot;) agree to be legally bound by these Terms and Conditions (&quot;Terms&quot;). Automex is a brand owned and operated by Hypex, and these Terms apply equally to all services, activities, and commercial engagements provided under Hypex and Automex. If you disagree with any portion of these Terms, you must discontinue use of our site and services immediately.
             </p>
           </section>
 
@@ -179,23 +179,53 @@ export default function TermsAndConditions() {
                   +91 9746717794
                 </a>
               </p>
-              <p className="text-gray">Website: https://hypex.agency</p>
+              <p className="text-gray">
+                Website: https://hypex.agency • https://automextechnologies.com
+              </p>
+              <p className="text-gray mt-1 text-xs">
+                Automex is a brand owned and operated by Hypex.
+              </p>
             </div>
           </section>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-white/10 py-8">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray">
-          <p>© {new Date().getFullYear()} Hypex. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
+      <footer className="bg-black border-t border-white/10 py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Our Brands */}
+          <div className="flex flex-col items-center justify-center text-center gap-3 pb-8 mb-8 border-b border-white/10">
+            <p className="text-xs uppercase tracking-widest text-gray font-semibold">
+              Our Brands
+            </p>
+            <a
+              href="https://automextechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/10 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300"
+              title="Automex Technologies"
+            >
+              <img
+                src="/images/automexlogosmall.png"
+                alt="Automex"
+                className="h-6 md:h-7 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </a>
+            <p className="text-xs text-gray">
+              Automex is a brand owned and operated by Hypex.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray">
+            <p>© {new Date().getFullYear()} Hypex. All rights reserved.</p>
+            <div className="flex gap-6">
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/" className="hover:text-white transition-colors">
+                Home
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
